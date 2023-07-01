@@ -93,7 +93,7 @@ export function Navigation({ navLinks }) {
 
 ### Scrolling to an `id`
 
-The default behavior of `<Link>` is to [scroll to the top of the route segment that has changed](#focus-and-scroll-management). When there is an `id` defined in `href`, it will scroll to the specific `id`, similarly to a normal `<a>` tag.
+The default behavior of `<Link>` is to [scroll to the top of the route segment that has changed](#focus-and-scroll-management). When there is an `id` defined in `href`, it will scroll to the specific `id`, similar to a normal `<a>` tag.
 
 ## `useRouter()` Hook
 
@@ -134,7 +134,7 @@ The `useRouter` provides methods such as `push()`, `refresh()`, and more. See th
 
 > **Good to know**: This client-side cache is different from the server-side [Next.js HTTP cache](/docs/app/building-your-application/data-fetching#caching-data).
 
-The new router has an **in-memory client-side cache** that stores the **rendered result** of Server Components (payload). The cache is split by route segments which allows invalidation at any level and ensures consistency across concurrent renders.
+The router has an **in-memory client-side cache** that stores the **rendered result** of Server Components (payload). The cache is split by route segments which allows invalidation at any level and ensures consistency across concurrent renders.
 
 As users navigate around the app, the router will store the payload of previously fetched segments **and** [prefetched](#prefetching) segments in the cache.
 
